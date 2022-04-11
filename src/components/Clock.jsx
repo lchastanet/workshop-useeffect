@@ -1,13 +1,13 @@
-import react, { useState } from "react"
+import { useState } from "react"
 
 function Clock () {
 
-const [hour, setHour] = useState("");
-    
+const [date, setDate] = useState(new Date());
+
 return (
     
     <div>
-        <p>Clock</p>
+        <p>{date.toString()}</p>
     </div>    
     
 )
